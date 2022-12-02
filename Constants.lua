@@ -6,6 +6,7 @@ CONSTANTS.EXPANSIONS = {
 	LEGION = "LEGION",
 	BFA = "BFA",
 	SHADOWLANDS = "SHADOWLANDS",
+	DRAGONFLIGHT = "DRAGONFLIGHT",
 }
 CONSTANTS.FACTIONS = {
 	NEUTRAL = 0,
@@ -54,6 +55,7 @@ CONSTANTS.REWARD_TYPES = {
 	MARK_OF_HONOR = 11,
 	SERVICE_MEDALS = 12,
 	PRISMATIC_MANAPEARL = 13,
+	DRAGON_ISLES_SUPPLIES = 14
 }
 
 CONSTANTS.QUEST_TYPES = {
@@ -100,6 +102,15 @@ CONSTANTS.CURRENCIES_AFFECTED_BY_WARMODE = {
 	[1220] = true, -- order hall (legion)
 	[1560] = true, -- war resources (bfa)
 	[1553] = true, -- azerite
+	[2003] = true, -- Dragon Isles Supplies
+}
+
+CONSTANTS.DRAGONFLIGHT_REPUTATION_CURRENCY_IDS = {
+	
+	[2031] = true, -- Dragonscale Expedition
+	[2108] = true, -- Maruuk Centaur
+	[2109] = true, -- Iskaara Tuskarr
+	[2106] = true, -- Valdrakken Accord
 }
 
 CONSTANTS.SHADOWLANDS_REPUTATION_CURRENCY_IDS = {
@@ -303,6 +314,13 @@ CONSTANTS.PARAGON_FACTIONS = {
 		-- [2439] = "", -- avowed
 		[2465] = "inv_wand_1h_ardenweald_d_01", -- wild hunt
 	},
+	dragonflight = {
+		order = { 2547, 2545, 2546, 2548 },
+		[2547] = "ui_majorfaction_expedition", --Dragonscales
+		[2545] = "ui_majorfaction_centaur", --Maruuk Centaurs
+		[2546] = "ui_majorfaction_tuskarr", --Tuskarr
+		[2548] = "ui_majorfaction_valdrakken", --Valdrakken
+	}
 }
 
 addon.CONSTANTS = CONSTANTS
